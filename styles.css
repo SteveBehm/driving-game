@@ -7,3 +7,19 @@ body {
   background-color: green;
   margin: 0;
 }
+
+.orient-north {
+  transform: rotate(-90deg);
+}
+
+.orient-south {
+  transform: rotate(90deg);
+}
+
+.orient-west {
+  transform: rotate(180deg);
+}
+
+.orient-east {
+  transform: rotate(0deg);
+}
