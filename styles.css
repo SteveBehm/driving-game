@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* .orient-north {
+.orient-north {
   transform: rotate(-90deg);
 }
 
@@ -22,4 +22,4 @@ body {
 
 .orient-east {
   transform: rotate(0deg);
-} */
+}
