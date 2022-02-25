@@ -1,3 +1,4 @@
+/* global data */
 // query the dom to get the img element
 var $racecarImg = document.querySelector('img');
 
@@ -20,3 +21,17 @@ function turnCar(event) {
 }
 
 document.addEventListener('keydown', turnCar);
+
+// Code that changes the images x and y coordinates
+/*
+I need to increment the image's x and y values
+change the style attribute on the image to the updated values
+have them change every 16 milliseconds
+*/
+
+function moveCar() {
+  data.x++;
+  $racecarImg.style.left = data.x + 'px';
+}
+
+setInterval(moveCar, 16);
