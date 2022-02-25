@@ -36,3 +36,7 @@ function moveCar() {
 }
 
 setInterval(moveCar, 16);
+
+/* code to create a function that stops the car if the spacebar
+is pressed on the keyboard
+*/
