@@ -24,13 +24,14 @@ document.addEventListener('keydown', turnCar);
 
 // Code that changes the images x and y coordinates
 /*
-I need to increment the image's x and y values
-change the style attribute on the image to the updated values
+I need to increment the image's x value
+change the style attribute on the image to the updated value
 have them change every 16 milliseconds
+increment by a greater number if you want to go faster
 */
 
 function moveCar() {
-  data.x++;
+  data.x += 4;
   $racecarImg.style.left = data.x + 'px';
 }
 
