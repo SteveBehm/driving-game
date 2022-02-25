@@ -1,6 +1,7 @@
 img {
   height: 10rem;
   width: 10rem;
+  position: absolute;
 }
 
 body {
