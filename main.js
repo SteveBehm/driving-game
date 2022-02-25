@@ -38,7 +38,10 @@ function moveCar() {
 var startCar = setInterval(moveCar, 16);
 
 /* code to create a function that stops the car if the spacebar
-is pressed on the keyboard
+is pressed on the keyboard.
+To stop the car from moving we need to stop the interval function
+from continuing to run. One way is to use clearnInterval within the
+spacebar event listener.
 */
 function stopCar(event) {
   if (event.keyCode === 32) {
