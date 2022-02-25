@@ -35,8 +35,14 @@ function moveCar() {
   $racecarImg.style.left = data.x + 'px';
 }
 
-setInterval(moveCar, 16);
+var startCar = setInterval(moveCar, 16);
 
 /* code to create a function that stops the car if the spacebar
 is pressed on the keyboard
 */
+function stopCar(event) {
+  if (event.keyCode === 32) {
+    clearInterval(startCar);
+  }
+}
+document.addEventListener('keydown', stopCar);
